@@ -1,0 +1,81 @@
+BaseBuilder
+
+Configuration   TypeAliasRegistry  TypeHandlerRegistry 
+
+TransactionFactory   ManagedTransactionFactory、JdbcTransactionFactory
+
+
+
+TransactionIsolationLevel 事务隔离级别
+Transaction     ManagedTransaction   JdbcTransaction
+Executor     BaseExecutor  BatchExecutor    ReuseExecutor  SimpleExecutor（默认）   CachingExecutor   ExecutorType  
+
+延申  
+1.ConcurrentLinkedQueue它采用了“wait－free”算法来实现，该算法在Michael & Scott算法上进行了一些修改。
+2.java动态代理Proxy.newProxyInstance
+
+
+SqlSession
+
+
+Cache   PerpetualCache BlockingCache  
+
+
+RowBounds
+
+try {
+      MappedStatement ms = configuration.getMappedStatement(statement);
+      return executor.query(ms, wrapCollection(parameter), rowBounds, Executor.NO_RESULT_HANDLER);
+    } catch (Exception e) {
+      throw ExceptionFactory.wrapException("Error querying database.  Cause: " + e, e);
+    } finally {
+      ErrorContext.instance().reset();
+    }
+ 延申 Map
+
+
+解析mapper 
+
+XMLMapperBuilder  MapperBuilderAssistant  XPathParser
+CacheRefResolver
+
+Cache
+    typeAliasRegistry.registerAlias("PERPETUAL", PerpetualCache.class);  
+    typeAliasRegistry.registerAlias("FIFO", FifoCache.class);
+    typeAliasRegistry.registerAlias("LRU", LruCache.class);
+    typeAliasRegistry.registerAlias("SOFT", SoftCache.class);
+    typeAliasRegistry.registerAlias("WEAK", WeakCache.class);
+CacheBuilder
+SystemMetaObject
+MetaObject
+bridge method（桥接方法）
+
+
+Reflector
+PropertyNamer
+MethodInvoker
+TypeParameterResolver
+
+DefaultReflectorFactory
+ReflectorFactory
+
+MetaObject
+DefaultObjectWrapperFactory
+MapWrapper
+CollectionWrapper
+BeanWrapper
+BaseWrapper
+ObjectWrapper
+
+
+
+java反射
+
+SystemMetaObject
+ObjectFactory
+ObjectWrapperFactory
+MetaObject
+
+for (Map.Entry<Object, Object> entry : properties.entrySet())  Propertie本质是HashTable
+
+https://www.jianshu.com/p/e6542692c272
