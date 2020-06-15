@@ -1,3 +1,5 @@
+XNode    XPathParser 
+
 BaseBuilder
 
 Configuration   TypeAliasRegistry  TypeHandlerRegistry 
@@ -79,3 +81,17 @@ MetaObject
 for (Map.Entry<Object, Object> entry : properties.entrySet())  Propertie本质是HashTable
 
 https://www.jianshu.com/p/e6542692c272
+
+
+ParameterMapping
+
+
+https://www.jianshu.com/p/d6e9b1c211dd
+
+https://www.jianshu.com/c/8d050bf89c61
+
+
+ResultMapping
+ResultMap
+
+mybatise  extends
