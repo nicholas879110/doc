@@ -97,3 +97,13 @@ ResultMap
 mybatise  extends
 
 ResultMapResolver
+
+XMLStatementBuilder 
+
+XMLIncludeTransformer
+
+扩展 Optional.ofNullable  Optional.ifPresent
+
+
+ languageRegistry.setDefaultDriverClass(XMLLanguageDriver.class);
+    languageRegistry.register(RawLanguageDriver.class);
