@@ -95,3 +95,5 @@ ResultMapping
 ResultMap
 
 mybatise  extends
+
+ResultMapResolver
