@@ -107,3 +107,28 @@ XMLIncludeTransformer
 
  languageRegistry.setDefaultDriverClass(XMLLanguageDriver.class);
     languageRegistry.register(RawLanguageDriver.class);
+
+
+ResultSetType
+SqlSource
+
+TrimHandler
+
+
+
+xmlTags
+
+SqlNode
+MixedSqlNode
+StaticTextSqlNode
+TextSqlNode
+TrimSqlNode
+VarDeclSqlNode
+WhereSqlNode
+ChooseSqlNode
+ForEachSqlNode
+IfSqlNode
+SetSqlNode
+
+
+扩展  java8  StringJoiner
