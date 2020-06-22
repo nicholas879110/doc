@@ -111,6 +111,7 @@ XMLIncludeTransformer
 
 ResultSetType
 SqlSource
+StaticSqlSource
 
 TrimHandler
 
