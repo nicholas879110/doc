@@ -111,6 +111,7 @@ XMLIncludeTransformer
 
 ResultSetType
 SqlSource
+StaticSqlSource
 
 TrimHandler
 
@@ -132,3 +133,8 @@ SetSqlNode
 
 
 扩展  java8  StringJoiner
+
+
+StatementHandler
+
+ExecutorType
